@@ -24,10 +24,23 @@ header {
 	color: var(--textColor);
 }
 
+.navbar {
+	width: 100vw;
+	height: 40px;
+	border-radius: 15px;	
+}
+// img{
+// 	margin-left: 2rem;
+	
+// }
+
 nav a {
 	margin: 0 1rem;
 	color: var(--textColor);
 	text-decoration: none;
+	text-align: center;
+	justify-content: center;
+	
 }
 
 nav a:hover {
@@ -50,6 +63,9 @@ header div,
 nav {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+
 }
 
 @media only screen and (max-width: 1024px) {

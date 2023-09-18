@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;1,300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@use "../../Styleed/Theme.js" as s;
 * {
 	padding: 0;
 	margin: 0;
@@ -18,7 +18,7 @@ footer {
   display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 80px;
+	height: 130px;
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
@@ -28,6 +28,14 @@ footer {
        color: #333;
        margin: 0;
      }
+.logo{
+	width:350px;
+	font-size:13px;
+
+.last-p {
+	margin-top: 1rem;
+}	
+}
 }
 
 @media (min-width: 600px) {

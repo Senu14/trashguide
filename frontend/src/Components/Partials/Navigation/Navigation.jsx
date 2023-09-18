@@ -14,13 +14,17 @@ function Navigation () {
 
 	return (
 		<header>
-			<h3>LOGO</h3>
-			<nav ref={navRef}>
+			<div className="logo">
+      <img src={require('../../../Assets/Images/Layout/PNG/logo.png')} alt="logo" />
+      <span>Affaldsguiden</span> 
+      </div>
+			<nav className='navbar' ref={navRef}>
 				<a href="/">Forside</a>
 				<a href="/Sortering">Sortering</a>
 				{/* <a href="/cards">CARDS</a> */}
 				<a href="/Genbrugsstationer">Genbrugsstationer</a>
 				<a href="/Bestilbeholder">Bestilbeholder</a>
+				<img src={require('../../../Assets/Images/Layout/PNG/icon-unlock.png')} alt="unlock" /> 
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
@@ -32,6 +36,7 @@ function Navigation () {
 				onClick={showNavbar}>
 				<FaBars />
 			</button>
+			
 		</header>
 	);
 }
