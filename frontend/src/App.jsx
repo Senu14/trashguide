@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import ApiTest from './apiTest';
+import Header from "./Components/Partials/Header/Header";
+import Footer from "./Components/Partials/Footer/Footer";
+import AppRouter from "./Components/App/AppRouter/AppRouter";
+
 
 function App() {
   return (
     <div className="App">
-    <ApiTest />
+        <Header />  
+        <AppRouter />
+        <Footer />  
     </div>
   );
 }
