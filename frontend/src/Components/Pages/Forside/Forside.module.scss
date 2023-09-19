@@ -96,18 +96,19 @@
      
      font-family: y.$fontOpenSans;
      color: s.$green;
-     font-size: 36px;
+     font-size: 29px;
+     font-weight: light;
      padding-top: 9px;
      position: relative;
     z-index: 1;
     
     &:before {
-        border-top: 20px solid rgb(133, 207, 133, .5);
+        border-top: 21px solid rgb(133, 207, 133, .5);
         content:"";
         margin: 0 auto; /* this centers the line to the full width specified */
         position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
-        top: -50; left: -20; right: -55; bottom: 0;
-        width: 100%;
+        bottom: 0;
+        width: 54%;
         z-index: -1;
     
     
@@ -124,6 +125,7 @@
      color: s.$green;
      padding-top: 10px;
      font-size: 14;
+     
 
 }
 .btn3 {

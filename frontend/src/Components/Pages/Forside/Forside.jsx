@@ -1,11 +1,19 @@
 import React from 'react';
 import style from './Forside.module.scss';
+import Carousel from '../DetailCards/SlideShow/Slide';
 
 
 // Define the Forside component
 const Forside = () => {
   return (
+    <>
+   
     <div className={style.cotainer}>
+    <Carousel />
+      <header>
+      
+
+      </header>
       <div className={style.find}>
       <p>Find og anmeld genbrugsstationer</p>
     
@@ -23,7 +31,7 @@ const Forside = () => {
 
 
           <h2 className={style.nab}><span>
-            </span> til sortering</h2>
+            </span>Din guide til sortering</h2>
           
           
        <p className={style.para}>Her kan du se hvordan du skal 
@@ -64,7 +72,7 @@ const Forside = () => {
 <img className={style.wave} src={require('../../../Assets/Images/Layout/PNG/bg-wave-1.png')} alt="wave1" />
 </div>
 </div>
-   
+</>
     
   )
 }
