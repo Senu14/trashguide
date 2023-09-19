@@ -1,13 +1,13 @@
 @use "../../Styleed/Them/Color.scss" as s;
 @use "../../Styleed/Them/Font.scss" as y;
 
-section {
+article {
      background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
      max-width: 1200px;
      margin: 0 auto;
      display: grid;
      gap: 1rem;
-     margin: auto;
+     margin-bottom: -0.3rem;
      justify-content: center;
      // background-color: rgb(210, 220, 223);
 }

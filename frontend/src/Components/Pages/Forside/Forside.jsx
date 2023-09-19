@@ -1,6 +1,8 @@
 import React from 'react';
 import style from './Forside.module.scss';
 
+
+// Define the Forside component
 const Forside = () => {
   return (
     <div className={style.cotainer}>
@@ -14,11 +16,15 @@ const Forside = () => {
       </div>
     
 
-{/*den 1st section startes here*/}
+{/*The 1st section startes here*/}
 
     <section className={style.guide}>
-      <figure>
-        <h2 className={style.nab}>Din guide til sortering</h2>
+      <div className={style.lap2}>
+
+
+          <h2 className={style.nab}>Din guide til sortering</h2>
+          
+          
        <p className={style.para}>Her kan du se hvordan du skal 
         sortere og hvad der skal i hvilke beholdere. 
         Du får også tips og tricks til, 
@@ -26,22 +32,22 @@ const Forside = () => {
       
         <button className={style.btn}>Se affaldsguide</button>
       <button className={style.Thewhite}>Bestil storskrald</button>
-      </figure>
+      </div>
       
-      <figure>
-      <img className={style.papekase}src={require('../../../Assets/Images/Photos/medium/papkasse.jpg')} alt="papkasse" />
-      </figure>
+      <div>
+      <img className={style.splash}src={require('../../../Assets/Images/Guide/Categories/unsplashsN4u56baSB0.png')} alt="Unsplashs" />
+      </div>
     </section>
     
-    {/*den 2st section startes here*/}
+
+{/*The 2nd section startes here*/}
 
     <section className={style.guide}>
-      <figure>
-        
-        <img className={style.papekase} src={require('../../../Assets/Images/Photos/medium/papkasse.jpg')} alt="papkasse" />
-      </figure>
+      <div>
+        <img className={style.papekase} src={require('../../../Assets/Images/Guide/Categories/Group 238974.png')} alt="Group" />
+      </div>
       
-      <figure>
+      <div className={style.lap2}>
       <h2 className={style.nab}>Bestil din nye affaldsbeholder</h2>
       <p className={style.para}>when an unknown 
         printer took a galley of type and scramble 
@@ -49,7 +55,7 @@ const Forside = () => {
         It has survived not only</p>
       
       <button className={style.btn3}>Bestil nu</button>
-      </figure>
+      </div>
       
     </section>
 

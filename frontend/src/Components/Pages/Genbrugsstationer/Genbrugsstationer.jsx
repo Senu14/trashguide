@@ -3,10 +3,10 @@ import style from './GS.module.scss'
 import axios from 'axios'
 
  const Genbrugsstationer = () => {
-   // State to store the list of events
+// State to store the list of events
    const [events, setEvents] = useState([]);
 
-   // Fetch data from the API when the component mounts
+// Fetch data from the API when the component mounts
    useEffect(() => {
     const fatchData = async () => {
       try { 
@@ -22,7 +22,7 @@ import axios from 'axios'
 
    return (
     <>
-    <section>
+    <article>
    
       <div className={style.products}>
          {events &&
@@ -44,9 +44,9 @@ import axios from 'axios'
            
        </div>
        <div>
-<img className={style.wave} src={require('../../../Assets/Images/Layout/PNG/bg-waves-1.png')} alt="waves" />
+<img className={style.wave} src={require('../../../Assets/Images/Layout/PNG/bg-wave-1.png')} alt="wave1" />
 </div>
-       </section>
+       </article>
       
 
 </>

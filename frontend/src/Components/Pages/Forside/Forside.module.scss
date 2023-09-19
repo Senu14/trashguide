@@ -7,9 +7,8 @@
      display: grid;
      gap: 1rem;
      margin: auto;
-     background-color: rgb(210, 220, 223);
-
-//  background-color: red;
+     margin-bottom: -0.3rem;
+    
 }
 .find {
      display: block;
@@ -22,7 +21,7 @@
      justify-content: space-between;
 	padding: 0 2rem;
   
-     p {
+.fine p {
           margin-right: 1rem; 
           font-size: 16px;
           margin-top: 1rem;
@@ -59,7 +58,7 @@
      background-color: s.$green;
      border-radius: 3px;
      color: white;
-     padding: 6px 8px;
+     padding: 5px 7px;
      border:  none;
      margin-top: 1rem;
      
@@ -72,10 +71,21 @@
      border-radius: 3px;
 
     }
+.lap2{
+     width: 290px;
+     margin-top: 2rem;
+    
+}
+.lap{
+     width: 290px;
+     margin-top: 2rem;
+
+}
+
 .guide {
      display: block;
-     width: 600px;
-     height: 250px;
+     width: 690px;
+     height: 350px;
      margin: auto;
      display: flex;
      margin-top: 1rem;
@@ -83,41 +93,57 @@
      justify-content: space-between;
      
 .nab{
-     text-decoration-line: line-through;
-     text-decoration-thickness: 0.5rem;
-   
-    
+     
      font-family: y.$fontOpenSans;
      color: s.$green;
-     font-size: 37px;
-     padding-top: 13px;
+     font-size: 36px;
+     padding-top: 9px;
+     position: relative;
+    z-index: 1;
+    
+    &:before {
+        border-top: 20px solid rgb(133, 207, 133, .5);
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: -50; left: -20; right: -55; bottom: 0;
+        width: 100%;
+        z-index: -1;
     
     
 }
+}
+// .napline {
+//      border: 10px solid black;
+//      z-index: -1;
+//      color: s.$green;
+//      opacity: 0.5;
+// }
 .para{
      font-family: y.$fontOpenSans;
      color: s.$green;
      padding-top: 10px;
+     font-size: 14;
 
 }
 .btn3 {
      background-color: s.$green;
      border-radius: 3px;
      color: white;
-     padding: 6px 8px;
+     padding: 5px 7px;
      border:  none;
-     margin-top: 2rem;
+     margin-top: 1rem;
      
     }
 
 
 .papekase{
-     width: 280px;
-     height: 250px;
+     width: 220px;
+     height: 290px;
 }
-figure{
-     width: 280px;
-     height: 250px;
+.splash{
+     width: 320px;
+     height: 300px;
 }
     
 }

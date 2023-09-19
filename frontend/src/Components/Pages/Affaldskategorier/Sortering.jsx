@@ -4,32 +4,32 @@ import Search from "./Search/Search";
 import axios from 'axios'
 
  const Sortering = () => {
-   // State to store the list of events
+// State to store the list of events
    const [events, setEvents] = useState([]);
 
-   // Fetch data from the API when the component mounts
+// Fetch data from the API when the component mounts
    useEffect(() => {
-     // API URL with query parameters/     
+// API URL with query parameters/     
      const url = `http://localhost:4000/section`;
-     // Function to make the API request
+// Function to make the API request
      const getData = async () => {
        try {
          const result = await axios.get(url);
         console.log(result);
-         // Set the retrieved data in the state
+// Set the retrieved data in the state
          setEvents(result.data);
        } catch (err) {
         console.error(err);
       }
      };
 
-     // Call the function to fetch data
+// Call the function to fetch data
    getData();
   }, [setEvents]);
 
    return (
     <>
-    <section>
+    <article>
     <div className={style.sort}>
     <h4>Din guide</h4>
     <h5>til en sund affaldssortering</h5>
@@ -59,7 +59,7 @@ import axios from 'axios'
        <div>
 <img className={style.wave} src={require('../../../Assets/Images/Layout/PNG/bg-waves-1.png')} alt="waves" />
 </div>
-       </section>
+       </article>
       
 
 </>
