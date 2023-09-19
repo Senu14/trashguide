@@ -15,7 +15,7 @@ function Footer() {
         <p className='last-p'>©2023 Affaldsguiden.</p>
       </div>
       <div className="Arrow">
-        <span>Back to top</span>
+        <span className='FLS'>Back to top</span>
       <img className="Flogo" src={require('../../../Assets/Images/Layout/PNG/icon-arrow-up.png')} alt="Arrow" />
       </div>
       

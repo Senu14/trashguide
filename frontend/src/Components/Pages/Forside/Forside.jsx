@@ -22,7 +22,8 @@ const Forside = () => {
       <div className={style.lap2}>
 
 
-          <h2 className={style.nab}>Din guide til sortering</h2>
+          <h2 className={style.nab}><span>
+            </span> til sortering</h2>
           
           
        <p className={style.para}>Her kan du se hvordan du skal 
