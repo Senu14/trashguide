@@ -1,0 +1,38 @@
+@use "../../../Styleed/Them/Color.scss" as s;
+@use "../../../Styleed/Them/Font.scss" as y;
+
+.search-container {
+    
+     align-items: center;
+     position: relative;
+    
+     input {
+       padding: 5px;
+       border: 1px solid #ccc;
+       border-radius: 40px;
+       width: 220px;
+       font-family: y.$fontOpenSans;
+   
+     }
+   
+     button {
+       position:relative;
+       top: 0;
+       right: 0;
+     //   background-color: #007bff;
+       color: #fff;
+       border: none;
+       border-radius: 0 4px 4px 0;
+       padding: 4px 7px;
+       cursor: pointer;
+   
+       svg {
+         font-size: 13px;
+       }
+   
+       &:hover {
+        color: s.$green;
+       }
+     }
+   }
+   

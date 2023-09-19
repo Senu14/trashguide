@@ -21,7 +21,7 @@ function Navigation () {
       </div>
 			<nav className='navbar' ref={navRef}>
 				<a href="/">Forside</a>
-				<a href="/Sortering">Sortering</a>
+				<a href="/Sort">Sortering</a>
 				{/* <a href="/cards">CARDS</a> */}
 				<a href="/Genbrugsstationer">Genbrugsstationer</a>
 				<a href="/Bestilbeholder">Bestilbeholder</a>
