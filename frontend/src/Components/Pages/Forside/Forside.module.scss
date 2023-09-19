@@ -1,2 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;1,300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-@use "../../Styleed/Theme.js" as s;
+@use "../../Styleed/Them/Color.scss" as s;
+@use "../../Styleed/Them/Font.scss" as y;
+
+.cotainer {
+     max-width: 1200px;
+     margin: 0 auto;
+     display: grid;
+     gap: 1rem;
+     margin: auto;
+     background-color: rgb(210, 220, 223);
+
+//  background-color: red;
+}
+.find {
+     display: block;
+     width: 320px;
+     height: 120px;
+     margin: auto;
+     display: grid;
+     border-radius: 3px;
+     background-color: s.$grey;
+     justify-content: space-between;
+	padding: 0 2rem;
+  
+     p {
+          margin-right: 1rem; 
+          font-size: 16px;
+          margin-top: 1rem;
+        }
+ 
+   }
+   .dubble{
+     display: flex;
+     font-size: 12px;
+     margin-bottom: 50px;
+    .first{
+     background-color: s.$green;
+     border-radius: 3px;
+     color: white;
+     padding: 3px 8px;
+     border:  none;
+     margin-top: 2rem;
+     margin-left: 1rem;
+
+    }
+    .secound {
+     background-color: s.$green;
+     border-radius: 3px;
+     color: white;
+     padding: 6px 16px;
+     border:  none;
+     margin-top: 2rem;
+     margin-left: 3rem;
+}
+     
+   }
+
+.btn {
+     background-color: s.$green;
+     border-radius: 3px;
+     color: white;
+     padding: 6px 8px;
+     border:  none;
+     margin-top: 1rem;
+     
+    }
+.Thewhite {
+     color: s.$green;
+     border-color: s.$green;
+     margin-left: 1rem;
+     padding: 4px 7px;
+     border-radius: 3px;
+
+    }
+.guide {
+     display: block;
+     width: 600px;
+     height: 250px;
+     margin: auto;
+     display: flex;
+     margin-top: 1rem;
+     margin-bottom: 2rem;
+     justify-content: space-between;
+     
+.nab{
+     text-decoration-line: line-through;
+     text-decoration-thickness: 0.5rem;
+   
+    
+     font-family: y.$fontOpenSans;
+     color: s.$green;
+     font-size: 37px;
+     padding-top: 13px;
+    
+    
+}
+.para{
+     font-family: y.$fontOpenSans;
+     color: s.$green;
+     padding-top: 10px;
+
+}
+.btn3 {
+     background-color: s.$green;
+     border-radius: 3px;
+     color: white;
+     padding: 6px 8px;
+     border:  none;
+     margin-top: 2rem;
+     
+    }
+
+
+.papekase{
+     width: 280px;
+     height: 250px;
+}
+figure{
+     width: 280px;
+     height: 250px;
+}
+    
+}
+.wave{
+ width: 100%;
+ img{
+     margin-top: 1rem;
+ }
+
+ }
+ 
+    
+
+   
+   

@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
-import './Navigation.scss';
+import './Navigation.scss'
+
 
 
 function Navigation () {
@@ -14,8 +15,8 @@ function Navigation () {
 
 	return (
 		<header>
-			<div className="logo">
-      <img src={require('../../../Assets/Images/Layout/PNG/logo.png')} alt="logo" />
+			<div className="top-logo">
+      <img className="logo" src={require('../../../Assets/Images/Layout/PNG/logo.png')} alt="logo" />
       <span>Affaldsguiden</span> 
       </div>
 			<nav className='navbar' ref={navRef}>
@@ -24,7 +25,7 @@ function Navigation () {
 				{/* <a href="/cards">CARDS</a> */}
 				<a href="/Genbrugsstationer">Genbrugsstationer</a>
 				<a href="/Bestilbeholder">Bestilbeholder</a>
-				<img src={require('../../../Assets/Images/Layout/PNG/icon-unlock.png')} alt="unlock" /> 
+				<img className="dowmLock" src={require('../../../Assets/Images/Layout/PNG/icon-unlock.png')} alt="unlock" /> 
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

@@ -1,5 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@use "../../Styleed/Them/Color.scss" as s;
+@use "../../Styleed/Them/Font.scss" as y;
 
+body {
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	justify-items: center;
+ 
+ }
 * {
 	padding: 0;
 	margin: 0;
@@ -7,36 +17,38 @@
 	font-family: "Titillium Web", sans-serif;
 }
 
-:root {
-	--mainColor: #29335c;
-	--mainColorLight: #5767aa;
-	--secondaryColor: #db2b39;
-	--textColor: #eee;
-}
+
+
 
 header {
+	max-width: 1200px;
+     margin: 0 auto;
+	gap: 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 80px;
-	padding: 0 2rem;
-	background-color: var(--mainColor);
-	color: var(--textColor);
+	padding: 0 0rem;
+	
 }
 
 .navbar {
 	width: 100vw;
 	height: 40px;
-	border-radius: 15px;	
-}
-// img{
-// 	margin-left: 2rem;
+	border-radius: 15px;
 	
-// }
+}
+ .logo{
+	margin-left: 1rem;
+ }
+ span { 		
+	margin-top: 1.0rem;		
+	margin-right: 1rem;
+}
 
 nav a {
 	margin: 0 1rem;
-	color: var(--textColor);
+	color: s.$darkgrey;	
 	text-decoration: none;
 	text-align: center;
 	justify-content: center;
@@ -44,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-	color: var(--secondaryColor);
+	color: s.$green;	
 }
 
 header .nav-btn {
@@ -64,7 +76,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 2rem;
+	gap: 1rem;
 
 }
 
@@ -87,6 +99,12 @@ nav {
 		gap: 1.5rem;
 		background-color: var(--mainColor);
 		transition: 1s;
+	}
+	.top-logo {
+		visibility: hidden;
+		// .{
+		// 	visibility: hidden;
+		// }
 	}
 
 	header .responsive_nav {
