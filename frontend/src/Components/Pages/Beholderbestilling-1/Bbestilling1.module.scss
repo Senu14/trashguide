@@ -57,7 +57,7 @@ article {
           font-family: y.$fontOpenSans;
    
      }
-     span{
+     .free{
           color: s.$darkgrey;
      }
 
@@ -66,6 +66,17 @@ article {
           font-family: y.$fontOpenSans;
    
      }
+}
+.free{
+     background-color: #fff;
+     padding: 7px  14px;
+     margin-left: 25rem;
+     border-radius: 4px;
+     border: 10px solid ;
+     color: s.$green;
+  
+
+   
 }
 
 .clickOnit{
@@ -77,6 +88,7 @@ article {
      display: grid;
      width: 260px;
      height: 270px;
+     margin-left: 5rem;
      padding-bottom: 1rem;
      grid-template-columns: 1fr 1fr;
     
