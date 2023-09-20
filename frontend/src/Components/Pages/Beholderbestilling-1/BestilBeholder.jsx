@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import style from './Bbestilling1.module.scss';
-
+import { Link } from 'react-router-dom';
 import axios from 'axios'
 
  const Bbestilling1 = () => {
@@ -32,9 +32,7 @@ import axios from 'axios'
     <article>
       <div className={style.collecter}>
       <div className={style.greenfild}>
-      {/* <div>
-<img className={style.brokker} src={require('../../../Assets/Images/Guide/Categories/brokker.jpg')} alt="brokker" />
-</div> */}
+ 
       </div>
     <div className={style.products}>
     <div className={style.type}>
@@ -52,7 +50,7 @@ import axios from 'axios'
              console.log(data);
              return (
                <figure key={data.id}>
-                 {/* <Link to={`/bestil/${container.id}`}></Link> */}
+                
                  <img className={style.sortimg}
                      src={`http://localhost:4000/Assets/Images/Icons/${data.icon_filename}`}
                      alt={data.name}
@@ -69,8 +67,12 @@ import axios from 'axios'
                </figure>
              );
            })}
-           </div>
-           <button className={style.free}>Videre</button>
+          </div>
+          <button className={style.free}>
+          <Link to={`/Bbesti2`}>
+            Videre
+          </Link>
+          </button>
        </div>
        
        </div>

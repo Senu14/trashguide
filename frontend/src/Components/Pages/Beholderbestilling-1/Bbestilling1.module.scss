@@ -1,7 +1,6 @@
 @use "../../Styleed/Them/Color.scss" as s;
 @use "../../Styleed/Them/Font.scss" as y;
 
-
 .collecter {
      display: grid;
      position: relative;
@@ -12,15 +11,12 @@
      max-width: 800px;
      height: 550px;
      background-color: s.$space-gray;
-
-
 .greenfild {
           height: 550px;
           width: 250px;
           background-color: s.$green;
         }
 }
-
 article {
      gap: 1rem;
     
@@ -30,9 +26,6 @@ article {
      justify-content: center;
      align-items: center;
      background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
-    
-    
-     // background-color: rgb(210, 220, 223);
 }
 .products{
     width: 600px;
@@ -67,6 +60,11 @@ article {
    
      }
 }
+a{
+     text-decoration: none;
+     color: s.$darkgrey;
+
+}
 .free{
      background-color: #fff;
      padding: 7px  14px;
@@ -75,8 +73,6 @@ article {
      border: 10px solid ;
      color: s.$green;
   
-
-   
 }
 
 .clickOnit{
@@ -105,29 +101,22 @@ figure {
      border-radius: 2px;
      background-color:#fff;
 }
-
   .sortimg {
      width: 50%;
      height: 50%;
      object-fit: contain;
      display: block;
 
-    
-// button {
-//      margin-left: 11rem;
-//      }display: flex; 
   }
 }
 
 .wave{
      width: 100%;
-    
-     
+
    }
   
-   
 
-  
+
   @media (min-width: 600px) {
     .collecter{ grid-template-columns: repeat(2, 1fr); }
   }

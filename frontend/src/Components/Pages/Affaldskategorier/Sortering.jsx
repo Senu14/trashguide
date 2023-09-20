@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import style from './Sortering.module.scss';
+import { Link } from "react-router-dom";
 import Search from "./Search/Search";
 import axios from 'axios'
+
+
 
  const Sortering = () => {
 // State to store the list of events
@@ -35,38 +38,40 @@ import axios from 'axios'
     <h5>til en sund affaldssortering</h5>
     <Search />
     </div>
+
+
       <div className={style.products}>
          {events &&
            events.map((data) => {
              console.log(data);
              return (
+              <Link className={style.takeMe}to={`/AKDetaljer/${data.id}`}>
                <figure key={data.id}>
                  <img className={style.sortimg}
                      src={`http://localhost:4000/Assets/Images/Guide/Categories/${data.filename}`}
                      alt={data.title}
                    />
-                 
-                 <figcaption style={{ backgroundColor: `#${data.color}` }}>
+
+
+                <figcaption style={{ backgroundColor: `#${data.color}` }}>
                     {data.title}
                   </figcaption>
-                 
-                 
                </figure>
+               </Link>
              );
            })}
-           
        </div>
-       <div>
-<img className={style.wave} src={require('../../../Assets/Images/Layout/PNG/bg-waves-1.png')} alt="waves" />
-</div>
-       </article>
-      
-
-</>
-     
-     
-   );
- };
+    <div>
+      <img 
+        className={style.wave} 
+        src={require('../../../Assets/Images/Layout/PNG/bg-waves-1.png')} 
+        alt="waves" 
+        />
+      </div>
+    </article>
+  </> 
+  );
+};
 
  export default Sortering;
 
