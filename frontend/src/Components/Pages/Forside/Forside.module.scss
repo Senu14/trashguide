@@ -11,7 +11,10 @@
     
 }
 .find {
-     display: block;
+     position: absolute;
+     bottom: -4rem;      
+     right: 34rem;
+     z-index: 1;
      width: 320px;
      height: 120px;
      margin: auto;
@@ -21,7 +24,7 @@
      justify-content: space-between;
 	padding: 0 2rem;
   
-.fine p {
+.find1{
           margin-right: 1rem; 
           font-size: 16px;
           margin-top: 1rem;
@@ -83,13 +86,13 @@
 }
 
 .guide {
-     display: block;
+   
      width: 690px;
      height: 350px;
      margin: auto;
+     margin-top: 2rem;
      display: flex;
-     margin-top: 1rem;
-     margin-bottom: 2rem;
+     margin-top: 10rem;
      justify-content: space-between;
      
 .nab{
@@ -109,17 +112,11 @@
         position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
         bottom: 0;
         width: 54%;
-        z-index: -1;
-    
+        z-index: -1; 
     
 }
 }
-// .napline {
-//      border: 10px solid black;
-//      z-index: -1;
-//      color: s.$green;
-//      opacity: 0.5;
-// }
+
 .para{
      font-family: y.$fontOpenSans;
      color: s.$green;
@@ -160,4 +157,15 @@
     
 
    
+// @media (min-width: 600px) {
+//      .cotainer{ grid-template-columns: repeat(2, 1fr); }
+//    }
+// @media (min-width: 900px) {
+//      .cotainer{ grid-template-columns: repeat(3, 1fr); }
+//    }
+
    
+//  .find {
+//      bottom: 21rem;
+//      right: 56rem;}
+

@@ -7,15 +7,13 @@ import Carousel from '../DetailCards/SlideShow/Slide';
 const Forside = () => {
   return (
     <>
+    
    
     <div className={style.cotainer}>
     <Carousel />
-      <header>
-      
-
-      </header>
+     
       <div className={style.find}>
-      <p>Find og anmeld genbrugsstationer</p>
+      <p className={style.find1}>Find og anmeld genbrugsstationer</p>
     
     <div className={style.dubble}>
       <button className={style.first}>Find station</button>
