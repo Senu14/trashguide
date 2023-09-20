@@ -10,7 +10,7 @@ import axios from 'axios'
 // Fetch data from the API when the component mounts
    useEffect(() => {
 // API URL with query parameters/     
-     const url = `http://localhost:4000/section`;
+     const url = `http://localhost:4000/containers`;
 // Function to make the API request
      const getData = async () => {
        try {
@@ -30,35 +30,54 @@ import axios from 'axios'
    return (
     <>
     <article>
-    <div className={style.sort}>
-    <h4>Din guide</h4>
-    <h5>til en sund affaldssortering</h5>
-  
+      <div className={style.collecter}>
+      <div className={style.greenfild}>
+      {/* <div>
+<img className={style.brokker} src={require('../../../Assets/Images/Guide/Categories/brokker.jpg')} alt="brokker" />
+</div> */}
+      </div>
+    <div className={style.products}>
+    <div className={style.type}>
+  <span>Trin 1</span>
+    <h4>Vælg type</h4>
+    <p>Tation argumentum et usu, dicit viderer 
+      evertitur te has. Eu dictas concludaturque usu, 
+      facete detracto patrioque an per, lucilius 
+      pertinacia eu vel.</p>
     </div>
-      <div className={style.products}>
+
+    <div className={style.sort3}>
          {events &&
            events.map((data) => {
              console.log(data);
              return (
                <figure key={data.id}>
+                 {/* <Link to={`/bestil/${container.id}`}></Link> */}
                  <img className={style.sortimg}
-                     src={`http://localhost:4000/Assets/Images/Guide/Categories/${data.filename}`}
-                     alt={data.title}
+                     src={`http://localhost:4000/Assets/Images/Icons/${data.icon_filename}`}
+                     alt={data.name}
                    />
-                 
-                 <figcaption style={{ backgroundColor: `#${data.color}` }}>
-                    {data.title}
-                  </figcaption>
-                 
-                 
+                    <label htmlFor={`data_${data.id}`}>
+                    {data.name}
+                    <input className="clickOnit"
+                      type="radio"
+                      name="data"
+                      id={`data_${data.id}`}
+                    />
+                  </label>
+
                </figure>
              );
            })}
-           
+           </div>
+           <button>Videre</button>
+       </div>
+       
        </div>
        <div>
-<img className={style.wave} src={require('../../../Assets/Images/Layout/PNG/bg-waves-1.png')} alt="waves" />
+<img className={style.wave} src={require('../../../Assets/Images/Layout/PNG/bg-wave-1.png')} alt="wave1" />
 </div>
+
        </article>
       
 
