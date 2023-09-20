@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import style from './AKD.module.scss'
 import axios from "axios";
 
 
@@ -21,7 +22,7 @@ import axios from "axios";
       try {
         const result = await axios.get(url);
         console.log("this is the result", result);
-        //set the retrieved data in the state
+//set the retrieved data in the state
         setMana(result.data);
         console.log(result.data); // Log the data object
      } catch (error) {
@@ -36,10 +37,20 @@ import axios from "axios";
 
   return (
     <>
-      <h1>this is details page of garbage type</h1>
+    <article>
+    <div className={style.protecter}>
+     <div className={style.papair}>
+      <h3>papair</h3>
+      <img 
+        className={style.scrumple} 
+        src={require('../../../../Assets/Images/Guide/Categories/papir-og-aviser.jpg')} 
+        alt="scrumple " 
+        />
+
+      </div>
 {/* Render the data if available */}
       {mana && typeof mana === "object" && (
-        <div>
+        <div className={style.products}>
 {/* Display data properties here */}
           <p>Title: {mana.title}</p>
           <p>Description: {mana.description}</p>
@@ -54,6 +65,15 @@ import axios from "axios";
           ))}
         </div>
       )}
+     </div>
+     <div>
+     <img 
+        className={style.wave} 
+        src={require('../../../../Assets/Images/Layout/PNG/bg-wave-1.png')} 
+        alt="waves" 
+        />
+     </div>
+     </article>
     </>
   );
 };
