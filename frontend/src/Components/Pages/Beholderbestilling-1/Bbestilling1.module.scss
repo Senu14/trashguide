@@ -4,18 +4,19 @@
 
 .collecter {
      display: grid;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     margin: -50px 0 0 -50px;
-     gap: 20px;
-     max-width: 900px;
-     background-color: red;
+     position: relative;
+     top: 5rem;
+     left: 18%;
+     margin: -40px 0  0 -50px;
+     gap: 10px;
+     max-width: 800px;
+     height: 550px;
+     background-color: s.$space-gray;
 
 
 .greenfild {
           height: 550px;
-          width: 300px;
+          width: 250px;
           background-color: s.$green;
         }
 }
@@ -56,8 +57,11 @@ article {
           font-family: y.$fontOpenSans;
    
      }
+     span{
+          color: s.$darkgrey;
+     }
 
-     h5 {
+     p {
           color: s.$darkgrey;
           font-family: y.$fontOpenSans;
    
@@ -82,13 +86,12 @@ figure {
      cursor: pointer;
      width: 120px;
      height: 120px;
-    
      font-size: 11px;
      font-family: sans-serif;
      justify-content: center;
      align-items: center;
      border-radius: 2px;
-     background-color: rgb(210, 220, 223);
+     background-color:#fff;
 }
 
   .sortimg {
@@ -106,6 +109,7 @@ figure {
 
 .wave{
      width: 100%;
+    
      
    }
   

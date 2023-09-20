@@ -70,7 +70,7 @@ import axios from 'axios'
              );
            })}
            </div>
-           <button>Videre</button>
+           <button className={free}>Videre</button>
        </div>
        
        </div>
