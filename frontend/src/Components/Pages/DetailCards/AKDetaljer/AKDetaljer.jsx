@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+// import ExpandableDiv from '../AKDetaljer/Expandable/ExpandableDiv';
 import style from './AKD.module.scss'
 import axios from "axios";
 
@@ -37,7 +38,7 @@ import axios from "axios";
 
   return (
     <>
-    <article>
+    <article className={style.wrapper}>
     <div className={style.protecter}>
      <div className={style.papair}>
       <h3>papair</h3>
@@ -48,6 +49,8 @@ import axios from "axios";
         />
 
       </div>
+
+      {/* <ExpandableDiv /> */}
 {/* Render the data if available */}
       {mana && typeof mana === "object" && (
         <div className={style.products}>

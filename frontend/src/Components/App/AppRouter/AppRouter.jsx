@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Forside from '../../Pages/Forside/Forside';
 import Sortering from '../../Pages/Affaldskategorier/Sortering';
 import AKDetaljer from '../../Pages/DetailCards/AKDetaljer/AKDetaljer';
+import ExpandableDiv from '../../Pages/DetailCards/AKDetaljer/Expandable/ExpandableDiv';
 import Genbrugsstationer from '../../Pages/Genbrugsstationer/Genbrugsstationer';
 import GSDetaljer from '../../Pages/DetailCards/GenbrugsstationerDetaljer/GSDetaljer';
 import Bbestilling1 from '../../Pages/Beholderbestilling-1/BestilBeholder';
@@ -28,6 +29,7 @@ const AppRouter = () => {
       <Route path="/Genbrugsstationer" element={<Genbrugsstationer />} />
       {/*going to maps page with details and where you can made a review*/}
       <Route path="/GSDetaljer/:id" element={<GSDetaljer />} />
+      <Route path="/Expand" element={<ExpandableDiv />} />
       <Route path="/Bestilbeholder" element={<Bbestilling1 />} />
       <Route path="/Bbestilling2" element={<Bbestilling2 />} />
       <Route path="/log" element={<Login />} />

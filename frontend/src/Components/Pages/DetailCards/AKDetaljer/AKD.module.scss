@@ -14,8 +14,8 @@
 .papair {
      display: flex;
      height: 100px;
-     max-width: 680px;
-     background-color: s.$green;
+     max-width: 690px;
+     background-color: s.$blue;
      
      }
      .scrumple{
@@ -26,18 +26,18 @@
      h3{
           color: #fff;
           padding-top: 2rem;
+          padding-left: 0.5rem;
      }
 
 }
-article {
+.wrapper {
      gap: 1rem;
-    
      margin:  auto;
      max-width: 1200px;
      position: relative;
      justify-content: center;
      align-items: center;
-     background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
+     background-color: #fff;
 }
 .products{
     width: 600px;

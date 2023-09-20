@@ -1,6 +1,7 @@
 @use "../../Styleed/Them/Color.scss" as s;
 @use "../../Styleed/Them/Font.scss" as y;
 
+
 article {
      background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
      max-width: 1200px;
@@ -39,12 +40,6 @@ article {
           font-family: y.$fontOpenSans;
    
      }
-  
-}
-.takeMe{
-     text-decoration: none;
-     color: #fff;
-
 }
 
   figure {
@@ -101,5 +96,4 @@ figcaption{
   
   
 
-   
    

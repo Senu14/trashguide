@@ -1,0 +1,37 @@
+@use "../../../../Styleed/Them/Color.scss" as s;
+@use "../../../../Styleed/Them/Font.scss" as y;
+
+.expandable-div {
+     border: 1px solid #090909;
+     margin: 10px;
+     padding: 10px;
+     background-color: red;
+   }
+   
+.header {
+     cursor: pointer;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-weight: bold;
+   }
+   
+.arrow {
+     transition: transform 0.3s ease;
+     cursor: pointer;
+    
+   }
+   
+.arrow.down {
+     transform: rotate(180deg);
+   }
+   
+.content {
+     display: none;
+     margin-top: 10px;
+   }
+   
+.expanded .content {
+     display: block;
+   }
+   
