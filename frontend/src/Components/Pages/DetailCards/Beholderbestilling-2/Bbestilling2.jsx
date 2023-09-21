@@ -31,7 +31,7 @@ import axios from 'axios'
    return (
     <>
     <article>
-      <h1>this is my page</h1>
+
       <div className={style.collecter}>
       <div className={style.greenfild}>
       <img className={style.caunt}
@@ -40,14 +40,15 @@ import axios from 'axios'
       </div>
 
 
-    <div className={style.products}>
+    <div className={style.product}>
     <div className={style.type}>
-  <span>Trin 1</span>
-    <h4>Vælg type</h4>
-    <p>Tation argumentum et usu, dicit viderer 
-      evertitur te has. Eu dictas concludaturque usu, 
-      facete detracto patrioque an per, lucilius 
-      pertinacia eu vel.</p>
+  <span>Trin 2</span>
+    <h4>Hvor skal den leveres?</h4>
+    <p>Tation argumentum et usu, 
+      dicit viderer evertitur te has. 
+      Eu dictas concludaturque usu, 
+      facete detracto patrioque an per, 
+      lucilius pertinacia eu vel.</p>
     </div>
 
     <div className={style.NewOne}>

@@ -46,7 +46,7 @@ const formSubmit = async formObject => {
 	}
 
 	return (
-		<div className={style.NewOne}>
+		<div className={style.One}>
 			<form onSubmit={handleSubmit(formSubmit)}>
 				<div>
 					<label htmlFor="firstname"></label>

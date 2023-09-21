@@ -1,31 +1,53 @@
 @use "../../../Styleed/Them/Color.scss" as s;
 @use "../../../Styleed/Them/Font.scss" as y;
 
-.wrap {
+.googleMap {
      gap: 1rem;
      margin:  auto;
      max-width: 1200px;
      position: relative;
      justify-content: center;
      align-items: center;
-     background-color: #fff;
-
-.pro {
-     display: grid;
-     top: 6rem;
-     left: 18%;
-     margin: -40px 0  0 -50px;
-     gap: 10px;
-     max-width: 800px;
-     height: 550px;
+    
+    
      background-color: s.$space-gray;
-     .papair {
-          display: flex;
-          height: 100px;
-          max-width: 690px;
-          background-color: s.$blue;
-     }
 
+.Map {
+     display: grid;
+     width: 900px;
+     height: 240px;
+     background-color: s.$space-gray;
+}
+.starts {
+   
+     color: rgb(201, 211, 6);
+     
+}
+textarea{
+     width: 50%;
+     padding: 3%;
+     border-radius: 5px;
+    margin-left: 12rem;
 
+}
+.star{
+     color: s.$darkgrey;
+     margin-left: 31rem;
+}
+
+.markIt{
+     border: 2px solid;
+   
+}
+.lastClick{
+     button {
+          color: #fff;
+          border-radius: 4px;
+     padding: 7px 20px;
+     margin-left: 21rem;
+    margin-top: 1rem;
+     background-color: s.$green;
+  
+}
 }
 }

@@ -56,8 +56,9 @@ function GSDetaljer() {
 
   const handleReviewSubmit = async () => {
     try {
-      // Submit the review using the comment and stars
-      // You can send this data to your backend to save the review
+// Submit the review using the comment and stars
+ 
+
       console.log("Comment:", comment);
       console.log("Stars:", stars);
       // Reset comment and stars
@@ -68,7 +69,7 @@ function GSDetaljer() {
     }
   };
 
-  // Inside the GSDetaljer component
+// Inside the GSDetaljer component
   const apiKey = "AIzaSyBWpWG3Wo-8pVMPcYXQXC7Zg7G2jBqlhGw";
 
   const getMapImage = () => {
@@ -82,36 +83,46 @@ function GSDetaljer() {
 
 return (
 <>
-<article className={style.wrap}>
-<div>
-        <h3>Station Map:</h3>
+<article className={style.googleMap}>
+<div className={style.markIt}>
+      
         {getMapImage()}
-        <img src="https://cdn.wccftech.com/wp-content/uploads/2020/08/Google-Maps.jpg" alt="" />
-      </div>
+        <img className={style.Map} src="https://cdn.wccftech.com/wp-content/uploads/2020/08/Google-Maps.jpg" alt="Map" />
+     
 
-<div className={style.pro}>
-<div className={style.papair}>
-      <h3>papair</h3>
+
+     
      
         
 
-      </div>
   {/* Render the data if available */}
   {mana && typeof mana === "object" && (
     <div>
       {/* Display data properties here */}
-      <p>name: {mana.name}</p>
-      <p>address: {mana.address}</p>
-      <p>zipcode: {mana.zipcode}</p>
-      <p>city: {mana.city}</p>
-      <p>country: {mana.country}</p>
-      <p>longitude: {mana.longitude}</p> {/* Fixed the typo here */}
-      <p>latitude: {mana.latitude}</p>
+      <p>{mana.name}</p>
+      <div className={style.starts}>
+          {[1, 2, 3, 4, 5].map((starValue) => (
+            <span 
+              key={starValue}
+              onClick={() => handleStarClick(starValue)}
+              style={{ cursor: "pointer" }}
+            >
+              {starValue <= stars ? "★" : "☆"}
+            </span>
+          ))}
+        </div>
+      <p>{mana.address}</p>
+      <p>{mana.zipcode}</p>
+      <p>{mana.city}</p>
+      <p>{mana.country}</p>
+      <hr />
+      <p>{mana.longitude}</p> {/* Fixed the typo here */}
+      <p>{mana.latitude}</p>
     </div>
   )}
 
   <div>
-    <h3>fetching the reviews for this one here : </h3>
+   
     {reviews ? (
       reviews.map((review) => (
         <div key={review.id}>
@@ -124,17 +135,13 @@ return (
       <p>No reviews available.</p>
     )}
   </div>
-  </div>
+
   <div>
-        <h3>Write a Review:</h3>
-        <textarea
-          value={comment}
-          onChange={(e) => setComment(e.target.value)}
-          placeholder="Write your comment..."
-        />
-        <div>
+  
+
+  {/* <div className={style.star}>
           {[1, 2, 3, 4, 5].map((starValue) => (
-            <span
+            <span 
               key={starValue}
               onClick={() => handleStarClick(starValue)}
               style={{ cursor: "pointer" }}
@@ -142,8 +149,20 @@ return (
               {starValue <= stars ? "★" : "☆"}
             </span>
           ))}
+        </div> */}
+
+        <textarea 
+          value={comment}
+          onChange={(e) => setComment(e.target.value)}
+          placeholder="Skriv en kommentar..."
+        />
+        <div className={style.lastClick}>
+        <button  
+          onClick={handleReviewSubmit}>
+          Submit Review
+        </button>
         </div>
-        <button onClick={handleReviewSubmit}>Submit Review</button>
+         </div>
       </div>
   </article>
 </>
