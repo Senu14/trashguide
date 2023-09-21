@@ -3,11 +3,9 @@ import style from "./GS.module.scss";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-
-
 const Genbrugsstationer = () => {
-  // State to store the list of station
-  const [station, setstation] = useState([]);
+  // State to store the list of events
+  const [events, setEvents] = useState([]);
 
   // Fetch data from the API when the component mounts
   useEffect(() => {
@@ -18,14 +16,14 @@ const Genbrugsstationer = () => {
         const response = await axios.get(url);
         // const jsonData = await response.json();
         console.log(response);
-        setstation(response.data);
-        // setstation(jsonData.slice(0, 6));
+        setEvents(response.data);
+        // setEvents(jsonData.slice(0, 6));
       } catch (error) {
         console.log("error fetching data:", error);
       }
     };
     fatchData();
-  }, [setstation]);
+  }, [setEvents]);
 
 
   return (
@@ -34,8 +32,8 @@ const Genbrugsstationer = () => {
       
        
           <div className={style.contents}>
-            {station &&
-              station.slice(0, 6).map((data) => {
+            {events &&
+              events.slice(0, 6).map((data) => {
                 console.log(data);
                 return (
                    <Link to={`/GSDetaljer/${data.id}`}>

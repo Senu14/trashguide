@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import style from './Login.module.scss';
+import LoginForm 
+from '../../../Components/Pages/DetailCards/Form/LogForm/LoginForm'
 // import { Link } from 'react-router-dom';
 import axios from 'axios'
 
  const Login = () => {
-// State to store the list of events
-   const [events, setEvents] = useState([]);
+// State to store the list of data
+   const [data, setdata] = useState([]);
 
 // Fetch data from the API when the component mounts
    useEffect(() => {
@@ -17,7 +19,7 @@ import axios from 'axios'
          const result = await axios.get(url);
         console.log(result);
 // Set the retrieved data in the state
-         setEvents(result.data);
+         setdata(result.data);
        } catch (err) {
         console.error(err);
       }
@@ -25,7 +27,7 @@ import axios from 'axios'
 
 // Call the function to fetch data
    getData();
-  }, [setEvents]);
+  }, [setdata]);
 
    return (
     <>
@@ -33,24 +35,29 @@ import axios from 'axios'
       <h1>this is my page</h1>
       <div className={style.valued}>
       <div className={style.wannaB}>
-     
-           
-          
-      <h2>Din guide til sortering</h2> 
-       <p className={style.para}>
+      <div className={style.lastPage}>
+      <img  className={style.aleku}src={require('../../../Assets/Images/Layout/PNG/logo.png')} alt="logo" />
+      <span>Affaldsguiden</span> 
+       
+       <p className={style.paras}>
         Log ind på Affaldsguiden
         for at anmelde stationer</p>
-      
       </div>
-      
-      <div>
-      <img className={style.splash}src={require('../../../Assets/Images/Guide/Categories/unsplashsN4u56baSB0.png')} alt="Unsplashs" />
-      </div>
-    </div>
 
-    <div className={style.NewOne}>
+      <div className={style.NewOne}>
+      <LoginForm />
    
           </div>
+           
+          
+      
+      
+      </div>
+
+      
+    </div>
+
+    
           
     
        
