@@ -15,6 +15,12 @@
           height: 550px;
           width: 250px;
           background-color: s.$green;
+
+          img{
+               width: 30px;
+               margin-left: 12rem;
+               margin-top: 3rem;
+          }
         }
 }
 article {
@@ -80,32 +86,38 @@ a{
     top: 5rem;
 }
 .sort3{
-     margin: 0 auto;
-     display: grid;
      width: 260px;
      height: 270px;
-     margin-left: 5rem;
+     display: grid;
+     margin: 0 auto;
+     margin-left: 7rem;
      padding-bottom: 1rem;
      grid-template-columns: 1fr 1fr;
     
 
 figure {
-     padding: 13px;
-     cursor: pointer;
+     gap: 2rem;
      width: 120px;
+     padding: 10px;
      height: 120px;
-     font-size: 11px;
+     font-size: 10px;
+     cursor: pointer;
+     color: s.$darkgrey;
+     align-items: center;
+     border-radius: 10px;
+     
      font-family: sans-serif;
      justify-content: center;
-     align-items: center;
-     border-radius: 2px;
      background-color:#fff;
+   
+  
+     
 }
   .sortimg {
-     width: 50%;
-     height: 50%;
-     object-fit: contain;
-     display: block;
+     width: 40%;
+     height: 40%;
+  justify-content: center;
+    
 
   }
 }

@@ -30,8 +30,15 @@ import axios from 'axios'
    return (
     <>
     <article>
+      <h1>this is my page</h1>
       <div className={style.collecter}>
       <div className={style.greenfild}>
+      <img className={style.caunt}
+          src={require('../../../../Assets/Images/Layout/PNG/bottle.png')} 
+          alt="bottle" />
+                   
+ 
+    
     
       </div>
     <div className={style.products}>
@@ -69,7 +76,7 @@ import axios from 'axios'
            })}
           </div>
           <button className={style.free}>
-          <Link to={`/Bbesti2`}>
+          <Link to={`/`}>
             Videre
           </Link>
           </button>

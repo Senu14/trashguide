@@ -32,6 +32,10 @@ import axios from 'axios'
     <article>
       <div className={style.collecter}>
       <div className={style.greenfild}>
+      <img className={style.caunt}
+          src={require('../../../Assets/Images/Layout/PNG/water-bottle.png')} 
+          alt="Unsplashs" />
+                   
  
       </div>
     <div className={style.products}>
@@ -46,7 +50,7 @@ import axios from 'axios'
 
     <div className={style.sort3}>
          {events &&
-           events.map((data) => {
+           events.slice(0, 4).map((data) => {
              console.log(data);
              return (
                <figure key={data.id}>
@@ -69,7 +73,7 @@ import axios from 'axios'
            })}
           </div>
           <button className={style.free}>
-          <Link to={`/Bbesti2`}>
+          <Link to={`/Bbestil2`}>
             Videre
           </Link>
           </button>

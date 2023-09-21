@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import style from './Forside.module.scss';
 import Carousel from '../DetailCards/SlideShow/Slide';
 
@@ -16,8 +17,16 @@ const Forside = () => {
       <p className={style.find1}>Find og anmeld genbrugsstationer</p>
     
     <div className={style.dubble}>
-      <button className={style.first}>Find station</button>
-      <button className={style.secound}>Log ind</button>
+      <button className={style.first}>
+      <Link to={`/Genbrug`}>
+        Find station
+      </Link>
+        </button>
+      <button className={style.secound}>
+      <Link to={`/log`}>
+        Log ind
+      </Link>
+        </button>
       </div>
       </div>
     
@@ -61,7 +70,13 @@ const Forside = () => {
         it to make a type specimen book. 
         It has survived not only</p>
       
-      <button className={style.btn3}>Bestil nu</button>
+      <button className={style.btn3}>
+      <Link to={`/Bestil`}>
+        Bestil nu
+      </Link>
+      
+        
+        </button>
       </div>
       
     </section>

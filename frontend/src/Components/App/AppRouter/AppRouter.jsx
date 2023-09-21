@@ -26,12 +26,12 @@ const AppRouter = () => {
       {/* sort details page */}
       <Route path="/AKDetaljer/:id" element={<AKDetaljer />} />{" "}
       {/*going to maps page*/}
-      <Route path="/Genbrugsstationer" element={<Genbrugsstationer />} />
+      <Route path="/Genbrug" element={<Genbrugsstationer />} />
       {/*going to maps page with details and where you can made a review*/}
       <Route path="/GSDetaljer/:id" element={<GSDetaljer />} />
       <Route path="/Expand" element={<ExpandableDiv />} />
-      <Route path="/Bestilbeholder" element={<Bbestilling1 />} />
-      <Route path="/Bbestilling2" element={<Bbestilling2 />} />
+      <Route path="/Bestil" element={<Bbestilling1 />} />
+      <Route path="/Bbestil2" element={<Bbestilling2 />} />
       <Route path="/log" element={<Login />} />
     </Routes>
   );

@@ -38,7 +38,7 @@ const Genbrugsstationer = () => {
               station.slice(0, 6).map((data) => {
                 console.log(data);
                 return (
-                  // <Link to={`/GSDetaljer/${data.id}`}>
+                   <Link to={`/GSDetaljer/${data.id}`}>
                     <div className={style.data} key={data.id}>
                       <p>{data.name}</p>
                       <p>{data.address}</p>
@@ -47,7 +47,7 @@ const Genbrugsstationer = () => {
                       <hr />
                       
                      </div>
-                  //  </Link>
+                    </Link>
                 );
               })}
           </div>
