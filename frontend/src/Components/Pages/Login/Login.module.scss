@@ -1,2 +1,115 @@
 @use "../../Styleed/Them/Color.scss" as s;
 @use "../../Styleed/Them/Font.scss" as y;
+
+.valued {
+     display: grid;
+  
+     top: 5rem;
+     left: 18%;
+     margin: -40px 0  0 -50px;
+     gap: 10px;
+     max-width: 800px;
+     
+     background-color: s.$space-gray;
+.greenfild {
+          height: 550px;
+          width: 250px;
+          background-color: s.$green;
+
+         
+        }
+}
+article {
+     gap: 1rem;
+    
+     margin:  auto;
+     max-width: 1200px;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
+}
+
+
+  .splash{
+     width: 120px;
+     height: 200px;
+}
+.wannaB {
+   
+     width: 690px;
+     height: 350px;
+     margin: auto;
+     margin-top: 2rem;
+     display: flex;
+     margin-top: 10rem;
+     justify-content: space-between;
+}
+.type{
+     width: 460px;
+     height: 170px;
+     text-align: left;
+     padding-top: 1rem;
+     margin-left: 1rem;
+     
+     h4 {
+          color: s.$green;
+          font-family: y.$fontOpenSans;
+   
+     }
+     .free{
+          color: s.$darkgrey;
+     }
+
+     p {
+          color: s.$darkgrey;
+          font-family: y.$fontOpenSans;
+   
+     }
+}
+a{
+     text-decoration: none;
+     color: s.$darkgrey;
+
+}
+.cuteB{
+     background-color: #fff;
+     padding: 7px  14px;
+     margin-left: 25rem;
+     padding: 7px  16px;
+     border-radius: 4px;
+     border: 10px solid ;
+     color: s.$green;
+  
+}
+
+.NewOne{
+     width: 450px;
+     display: grid;
+     margin: 0 auto;
+     margin-left: 1rem;
+     grid-template-columns: 1fr 1fr;
+    
+
+
+}
+
+.wave{
+     width: 100%;
+
+   }
+  
+
+
+  @media (min-width: 600px) {
+    .collecter{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 900px) {
+    .products { grid-template-columns: repeat(4, 1fr); }
+  }
+  
+
+
+
+   
+   

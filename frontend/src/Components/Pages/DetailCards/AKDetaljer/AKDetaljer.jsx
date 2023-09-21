@@ -89,7 +89,10 @@ import axios from "axios";
             <div key={category.id}>
               <p>Category Title: {category.title}</p>
               <p>Icon Filename: {category.icon_filename}</p>
-              <p>Image Filename: {category.image_filename}</p>
+              <img src={require(`../../../../Assets/Images/Guide/Guide/Icons/${category.icon_filename}`)} 
+              alt="" />
+              <span>here is the image : </span>
+              
             </div>
           ))}
         </div>

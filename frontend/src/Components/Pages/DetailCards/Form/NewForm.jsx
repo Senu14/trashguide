@@ -27,7 +27,7 @@ const formSubmit = async formObject => {
 		formData.append('city', formObject.city)
 		
 		
-		//console.log(...formData);
+		
 
 	const options = {
 		headers: {
@@ -126,9 +126,9 @@ const formSubmit = async formObject => {
 
 				<div>
 					<button className={style.cuteB}>
-					<Link to={`/`}>
+					{/* <Link to={/hjihj}> */}
 					Send
-					</Link>
+					{/* </Link> */}
 					</button>
 				</div>
 			</form>

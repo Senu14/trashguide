@@ -1,3 +1,91 @@
+import React, { useEffect, useState } from "react";
+import style from './Login.module.scss';
+// import { Link } from 'react-router-dom';
+import axios from 'axios'
+
+ const Login = () => {
+// State to store the list of events
+   const [events, setEvents] = useState([]);
+
+// Fetch data from the API when the component mounts
+   useEffect(() => {
+// API URL with query parameters/     
+     const url = `http://localhost:4000/containers`;
+// Function to make the API request
+     const getData = async () => {
+       try {
+         const result = await axios.get(url);
+        console.log(result);
+// Set the retrieved data in the state
+         setEvents(result.data);
+       } catch (err) {
+        console.error(err);
+      }
+     };
+
+// Call the function to fetch data
+   getData();
+  }, [setEvents]);
+
+   return (
+    <>
+    <article>
+      <h1>this is my page</h1>
+      <div className={style.valued}>
+      <div className={style.wannaB}>
+     
+           
+          
+      <h2>Din guide til sortering</h2> 
+       <p className={style.para}>
+        Log ind på Affaldsguiden
+        for at anmelde stationer</p>
+      
+      </div>
+      
+      <div>
+      <img className={style.splash}src={require('../../../Assets/Images/Guide/Categories/unsplashsN4u56baSB0.png')} alt="Unsplashs" />
+      </div>
+    </div>
+
+    <div className={style.NewOne}>
+   
+          </div>
+          
+    
+       
+      
+      
+
+       </article>
+      
+
+</>
+     
+     
+   );
+ };
+
+ export default Login;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import { useForm } from "react-hook-form";
 // import './Login.scss';
 // import axios from 'axios';
