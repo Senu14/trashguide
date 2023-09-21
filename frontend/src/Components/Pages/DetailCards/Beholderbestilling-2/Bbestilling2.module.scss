@@ -34,23 +34,23 @@ article {
      background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
 }
 .products{
-    width: 600px;
+     width: 600px;
      margin: 0 auto;
-     grid-template-columns: 1fr 1fr;
      grid-gap: 1rem;
      margin: auto;
-     justify-content: center;
-     // background-color: rgb(210, 220, 223);
      padding-top: 2rem;
-     padding-bottom: 1rem;
+     padding-bottom: 1rem;  
+     justify-content: center;
+     grid-template-columns: 1fr 1fr;
     
   }
 .type{
      width: 460px;
-     height: 200px;
+     height: 170px;
      text-align: left;
      padding-top: 1rem;
-    
+     margin-left: 1rem;
+     
      h4 {
           color: s.$green;
           font-family: y.$fontOpenSans;
@@ -71,55 +71,26 @@ a{
      color: s.$darkgrey;
 
 }
-.free{
+.cuteB{
      background-color: #fff;
      padding: 7px  14px;
      margin-left: 25rem;
+     padding: 7px  16px;
      border-radius: 4px;
      border: 10px solid ;
      color: s.$green;
   
 }
 
-.clickOnit{
-    
-    top: 5rem;
-}
-.sort3{
-     width: 260px;
-     height: 270px;
+.NewOne{
+     width: 450px;
      display: grid;
      margin: 0 auto;
-     margin-left: 7rem;
-     padding-bottom: 1rem;
+     margin-left: 1rem;
      grid-template-columns: 1fr 1fr;
     
 
-figure {
-     gap: 2rem;
-     width: 120px;
-     padding: 10px;
-     height: 120px;
-     font-size: 10px;
-     cursor: pointer;
-     color: s.$darkgrey;
-     align-items: center;
-     border-radius: 10px;
-     
-     font-family: sans-serif;
-     justify-content: center;
-     background-color:#fff;
-   
-  
-     
-}
-  .sortimg {
-     width: 40%;
-     height: 40%;
-  justify-content: center;
-    
 
-  }
 }
 
 .wave{

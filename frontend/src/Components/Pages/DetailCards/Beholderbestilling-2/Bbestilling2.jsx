@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from './Bbestilling2.module.scss';
 import { Link } from 'react-router-dom';
+import NewForm from "../Form/NewForm";
 import axios from 'axios'
 
  const Bbestilling2 = () => {
@@ -36,11 +37,9 @@ import axios from 'axios'
       <img className={style.caunt}
           src={require('../../../../Assets/Images/Layout/PNG/bottle.png')} 
           alt="bottle" />
-                   
- 
-    
-    
       </div>
+
+
     <div className={style.products}>
     <div className={style.type}>
   <span>Trin 1</span>
@@ -51,35 +50,10 @@ import axios from 'axios'
       pertinacia eu vel.</p>
     </div>
 
-    <div className={style.sort3}>
-         {events &&
-           events.map((data) => {
-             console.log(data);
-             return (
-               <figure key={data.id}>
-                 {/* <Link to={`/bestil/${container.id}`}></Link> */}
-                 <img className={style.sortimg}
-                     src={`http://localhost:4000/Assets/Images/Icons/${data.icon_filename}`}
-                     alt={data.name}
-                   />
-                    <label htmlFor={`data_${data.id}`}>
-                    {data.name}
-                    <input className="clickOnit"
-                      type="radio"
-                      name="data"
-                      id={`data_${data.id}`}
-                    />
-                  </label>
-
-               </figure>
-             );
-           })}
+    <div className={style.NewOne}>
+    <NewForm />
           </div>
-          <button className={style.free}>
-          <Link to={`/`}>
-            Videre
-          </Link>
-          </button>
+          
        </div>
        
        </div>

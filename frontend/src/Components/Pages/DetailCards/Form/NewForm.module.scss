@@ -1,0 +1,46 @@
+@use "../../../Styleed/Them/Color.scss" as s;
+@use "../../../Styleed/Them/Font.scss" as y;
+
+ /* Styling for form container */
+.NewOne {
+     margin: 20px auto;
+     width: 300px;
+   }
+   
+  
+   label {
+     display: block;
+     margin-bottom: 1px;
+   }
+   
+  
+   input {
+     width: 145%;
+     padding: 10px;
+     margin-bottom: 4px;
+     border: 1px solid #ccc;
+     border-radius: 1px;
+   }
+   
+   /* Styling for error messages */
+.focuse {
+     color: red;
+     font-size: 12px;
+     margin-top: 5px;
+   }
+.cuteB{
+
+
+
+
+     background-color: #fff;
+     padding: 7px  19px;
+     margin-left: 25rem;
+     border-radius: 4px;
+margin-top: 0.5rem;
+     border: 10px solid ;
+     color: s.$green;
+     font-family: y.$fontOpenSans;
+  
+}
+   

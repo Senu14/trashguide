@@ -12,7 +12,7 @@ function Footer() {
         korrekt affaldssortering. 
         Ved at sortere hjælper du os, 
         men også klimaet.</p>
-        <p className='last-p'>©2023 Affaldsguiden.</p>
+        <span className='last-p'>©2023 Affaldsguiden.</span>
       </div>
       <div className="Arrow">
         <span className='FLS'>Back to top</span>
