@@ -1,0 +1,13 @@
+@use "../../../Styleed/Them/Color.scss" as s;
+@use "../../../Styleed/Them/Font.scss" as y;
+
+
+.Not-card {
+     margin: auto;
+     width: 70%;
+     padding: 10px;
+     text-align: center;
+     color: y.$darkgrey;
+     border: 2px solid s.$green;
+}
+

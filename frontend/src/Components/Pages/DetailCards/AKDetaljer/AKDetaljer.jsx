@@ -50,6 +50,31 @@ import axios from "axios";
 
       </div>
 
+
+      <div className={style.papair}>
+      <h3>papair</h3>
+      <img 
+        className={style.scrumple} 
+        src={require('../../../../Assets/Images/Guide/Categories/papir-og-aviser.jpg')} 
+        alt="scrumple " 
+        />
+
+      </div>
+
+
+      <div className={style.papair}>
+      <h3>papair</h3>
+      <img 
+        className={style.scrumple} 
+        src={require('../../../../Assets/Images/Guide/Categories/papir-og-aviser.jpg')} 
+        alt="scrumple " 
+        />
+
+      </div>
+
+
+      
+
       {/* <ExpandableDiv /> */}
 {/* Render the data if available */}
       {mana && typeof mana === "object" && (
@@ -57,7 +82,8 @@ import axios from "axios";
 {/* Display data properties here */}
           <p>Title: {mana.title}</p>
           <p>Description: {mana.description}</p>
-          <p>color: {mana.color}</p>
+         <p style={{ backgroundColor: `#${mana.color}` }}></p> 
+          {/* <p>color: {mana.color}</p> */}
 {/* Loop through categories and render each one */}
           {mana.categories.map((category) => (
             <div key={category.id}>
