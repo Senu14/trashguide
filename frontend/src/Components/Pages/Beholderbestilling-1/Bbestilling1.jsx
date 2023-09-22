@@ -1,11 +1,32 @@
 import React, { useEffect, useState } from "react";
 import style from './Bbestilling1.module.scss';
 import { Link } from 'react-router-dom';
+import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
+import { setSelectedValue } from "../../../redux/actions";
 import axios from 'axios'
+
+
 
  const Bbestilling1 = () => {
 // State to store the list of events
    const [events, setEvents] = useState([]);
+   const [selectedEventId, setSelectedEventId] = useState(null);
+   const [selectedData, setSelectedData] = useState(null);
+
+   const dispatch = useDispatch();
+
+   const handleRadioChange = (dataId) => {
+    const selectedData = events.find((data) => data.id === dataId);
+    setSelectedData(selectedData);
+    console.log("Selected Data ID:", dataId);  // Log the selected data ID
+
+    dispatch(setSelectedValue(selectedData));
+  };
+  const handleSelection = (eventId) => {
+    setSelectedEventId(eventId);
+  };
+
 
 // Fetch data from the API when the component mounts
    useEffect(() => {
@@ -15,7 +36,7 @@ import axios from 'axios'
      const getData = async () => {
        try {
          const result = await axios.get(url);
-        console.log(result);
+        //console.log(result);
 // Set the retrieved data in the state
          setEvents(result.data);
        } catch (err) {
@@ -65,6 +86,7 @@ import axios from 'axios'
                       type="radio"
                       name="data"
                       id={`data_${data.id}`}
+                      onChange={() => handleRadioChange(data.id)} 
                     />
                   </label>
 
@@ -72,7 +94,7 @@ import axios from 'axios'
              );
            })}
           </div>
-          <button className={style.free}>
+          <button className={style.free} onClick={handleRadioChange}>
           <Link to={`/Bbestil2`}>
             Videre
           </Link>

@@ -1,32 +1,30 @@
 import React, { useEffect, useState } from "react";
 import style from './Bbestilling2.module.scss';
-import { Link } from 'react-router-dom';
 import Form from "../Form/Form";
-import axios from 'axios'
+import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';// Used as react-hook-form
+import { setSelectedValue } from "../../../../redux/actions";
 
- const Bbestilling2 = () => {
-// State to store the list of events
-   const [events, setEvents] = useState([]);
+const Bbestilling2 = () => {
+  const [events, setEvents] = useState([]);
+  const selectedData = useSelector((state) => state.selectedValue);
+  console.log("Selected Data:", selectedData);
 
-// Fetch data from the API when the component mounts
-   useEffect(() => {
-// API URL with query parameters/     
-     const url = `http://localhost:4000/containers`;
-// Function to make the API request
-     const getData = async () => {
-       try {
-         const result = await axios.get(url);
-        console.log(result);
-// Set the retrieved data in the state
-         setEvents(result.data);
-       } catch (err) {
+  useEffect(() => {
+    const url = `http://localhost:4000/containers`;
+
+    const getData = async () => {
+      try {
+        const result = await axios.get(url);
+        setEvents(result.data);
+      } catch (err) {
         console.error(err);
       }
-     };
+    };
 
-// Call the function to fetch data
-   getData();
+    getData();
   }, [setEvents]);
+  const containerId = selectedData ? selectedData.id : null;
 
    return (
     <>
@@ -52,8 +50,8 @@ import axios from 'axios'
     </div>
 
     <div className={style.NewOne}>
-    <Form/>
-          </div>
+          <Form containerId={selectedData.id} />
+        </div>
           
        </div>
        

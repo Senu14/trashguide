@@ -10,7 +10,7 @@ import AKDetaljer from '../../Pages/DetailCards/AKDetaljer/AKDetaljer';
 import ExpandableDiv from '../../Pages/DetailCards/AKDetaljer/Expandable/ExpandableDiv';
 import Genbrugsstationer from '../../Pages/Genbrugsstationer/Genbrugsstationer';
 import GSDetaljer from '../../Pages/DetailCards/GenbrugsstationerDetaljer/GSDetaljer';
-import Bbestilling1 from '../../Pages/Beholderbestilling-1/BestilBeholder';
+import Bbestilling1 from '../../Pages/Beholderbestilling-1/Bbestilling1';
 import Bbestilling2 from '../../Pages/DetailCards/Beholderbestilling-2/Bbestilling2';
 import Login from '../../Pages/Login/Login';
 
