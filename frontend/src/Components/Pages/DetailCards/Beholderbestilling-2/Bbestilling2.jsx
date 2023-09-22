@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from './Bbestilling2.module.scss';
 import { Link } from 'react-router-dom';
-import NewForm from "../Form/NewForm";
+import Form from "../Form/Form";
 import axios from 'axios'
 
  const Bbestilling2 = () => {
@@ -52,7 +52,7 @@ import axios from 'axios'
     </div>
 
     <div className={style.NewOne}>
-    <NewForm />
+    <Form/>
           </div>
           
        </div>

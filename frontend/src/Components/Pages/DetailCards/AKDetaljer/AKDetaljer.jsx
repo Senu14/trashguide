@@ -40,8 +40,8 @@ import axios from "axios";
     <>
     <article className={style.wrapper}>
     <div className={style.protecter}>
-     <div className={style.papair}>
-      <h3>papair</h3>
+     <div className={style.papair1}>
+      <h3 className={style.klick}>papair</h3>
       <img 
         className={style.scrumple} 
         src={require('../../../../Assets/Images/Guide/Categories/papir-og-aviser.jpg')} 
@@ -51,58 +51,30 @@ import axios from "axios";
       </div>
 
 
-      <div className={style.papair}>
-      <h3>papair</h3>
+      <div className={style.papair2}>
       <img 
-        className={style.scrumple} 
-        src={require('../../../../Assets/Images/Guide/Categories/papir-og-aviser.jpg')} 
-        alt="scrumple " 
+        className={style.pap} 
+        src={require('../../../../Assets/Images/Icons/glasuld-stenuld_ut.png')} 
+        alt="glas" 
         />
-
+        <h3>Stenuld</h3>
       </div>
 
 
-      <div className={style.papair}>
-      <h3>papair</h3>
+      <div className={style.papair2}>
       <img 
-        className={style.scrumple} 
-        src={require('../../../../Assets/Images/Guide/Categories/papir-og-aviser.jpg')} 
-        alt="scrumple " 
+        className={style.pap} 
+        src={require('../../../../Assets/Images/Icons/icon-asfalt.png')} 
+        alt="asfalt" 
         />
-
+        <h3>Asfalt</h3>
       </div>
-
-
-      
-
-      {/* <ExpandableDiv /> */}
-{/* Render the data if available */}
-      {mana && typeof mana === "object" && (
-        <div className={style.products}>
-{/* Display data properties here */}
-          <p>Title: {mana.title}</p>
-          <p>Description: {mana.description}</p>
-         <p style={{ backgroundColor: `#${mana.color}` }}></p> 
-          {/* <p>color: {mana.color}</p> */}
-{/* Loop through categories and render each one */}
-          {mana.categories.map((category) => (
-            <div key={category.id}>
-              <p>Category Title: {category.title}</p>
-              <p>Icon Filename: {category.icon_filename}</p>
-              <img src={require(`../../../../Assets/Images/Guide/Guide/Icons/${category.icon_filename}`)} 
-              alt="" />
-              <span>here is the image : </span>
-              
-            </div>
-          ))}
-        </div>
-      )}
-     </div>
-     <div>
-     <img 
-        className={style.wave} 
-        src={require('../../../../Assets/Images/Layout/PNG/bg-wave-1.png')} 
-        alt="waves" 
+    </div>
+  <div>
+   <img 
+    className={style.wave} 
+      src={require('../../../../Assets/Images/Layout/PNG/bg-wave-1.png')} 
+      alt="waves" 
         />
      </div>
      </article>

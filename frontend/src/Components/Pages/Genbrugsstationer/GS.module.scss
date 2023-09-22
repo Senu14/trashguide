@@ -3,13 +3,12 @@
 
 
 .common {
-     gap: 1rem;
-     display: grid;
-     max-width: 1200px;
-     margin-bottom: -0.3rem;
-     justify-content: center;
-     // background-color: rgb(210, 220, 223);
-     background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
+  gap: 1rem;
+  display: grid;
+  max-width: 1200px;
+  margin-bottom: -0.3rem;
+  justify-content: center;
+  background-color: #f5f3f3;
      
 }
 
@@ -24,7 +23,7 @@
     padding-bottom: 1rem;
     align-items: center;
     justify-content: center;
-    background-color: rgb(210, 220, 223);
+    ;
     grid-template-columns: repeat(3, 1fr);
   }
   .data{

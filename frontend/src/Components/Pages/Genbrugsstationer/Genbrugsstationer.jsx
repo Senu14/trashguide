@@ -10,7 +10,7 @@ const Genbrugsstationer = () => {
   // Fetch data from the API when the component mounts
   useEffect(() => {
     // API URL with query parameters/
-    const url = `http://localhost:4000/orgs?attributes=id,name,address,zipcode,city`;
+    const url = `http://localhost:4000/orgs?attributes=id,name,address,zipcode,city,longtitude,latitude`;
     const fatchData = async () => {
       try {
         const response = await axios.get(url);
@@ -38,6 +38,8 @@ const Genbrugsstationer = () => {
                 return (
                    <Link to={`/GSDetaljer/${data.id}`}>
                     <div className={style.data} key={data.id}>
+                      <p>{data.longtitude}</p>
+                      <p>{data.longtitude}</p> 
                       <p>{data.name}</p>
                       <p>{data.address}</p>
                       <p>{data.zipcode}</p>

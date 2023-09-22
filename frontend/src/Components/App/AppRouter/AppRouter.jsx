@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 //import All Pages
 
 import Forside from '../../Pages/Forside/Forside';
-import NewForm from '../../Pages/DetailCards/Form/NewForm';
+import Form from '../../Pages/DetailCards/Form/Form';
 import Sortering from '../../Pages/Affaldskategorier/Sortering';
 import AKDetaljer from '../../Pages/DetailCards/AKDetaljer/AKDetaljer';
 import ExpandableDiv from '../../Pages/DetailCards/AKDetaljer/Expandable/ExpandableDiv';
@@ -23,7 +23,7 @@ const AppRouter = () => {
     <Routes>
       {/* The default route, leading to the "deferent" component */}
       <Route path="/" element={<Forside />} />
-      <Route path="/New" element={<NewForm />} />
+      {/* <Route path="/New" element={<NewForm />} /> */}
       <Route path="/Sort" element={<Sortering />} />
       {/* sort details page */}
       <Route path="/AKDetaljer/:id" element={<AKDetaljer />} />{" "}

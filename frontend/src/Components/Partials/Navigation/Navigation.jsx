@@ -29,7 +29,11 @@ function Navigation () {
 				{/* <a href="/cards">CARDS</a> */}
 				<a href="/Genbrug">Genbrugsstationer</a>
 				<a href="/Bestil">Bestilbeholder</a>
-				<img className="dowmLock" src={require('../../../Assets/Images/Layout/PNG/icon-unlock.png')} alt="unlock" /> 
+				<Link to={`/log`}>
+				<img className="dowmLock" 
+				src={require('../../../Assets/Images/Layout/PNG/icon-unlock.png')} alt="unlock"
+				 /> 
+				</Link>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

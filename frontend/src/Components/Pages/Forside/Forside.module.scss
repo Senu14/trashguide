@@ -8,6 +8,7 @@
      gap: 1rem;
      margin: auto;
      margin-bottom: -0.3rem;
+     background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
     
 }
 .find {
@@ -64,26 +65,26 @@
           color: white;
 
      }
-
 }
-     
    }
 
 .btn {
-     background-color: s.$green;
      border-radius: 3px;
      color: white;
      padding: 5px 7px;
      border:  none;
      margin-top: 1rem;
+     cursor: pointer;
+     background-color: s.$green;
      
     }
 .Thewhite {
      color: s.$green;
-     border-color: s.$green;
      margin-left: 1rem;
      padding: 4px 7px;
      border-radius: 3px;
+     cursor: pointer;
+     border-color: s.$green;
 
     }
 .lap2{
@@ -183,4 +184,3 @@
 //  .find {
 //      bottom: 21rem;
 //      right: 56rem;}
-

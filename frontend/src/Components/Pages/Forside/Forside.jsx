@@ -46,8 +46,18 @@ const Forside = () => {
         Du får også tips og tricks til, 
         hvordan du gør det nemt at sortere hjemme hos dig.</p>
       
-        <button className={style.btn}>Se affaldsguide</button>
-      <button className={style.Thewhite}>Bestil storskrald</button>
+        <Link to={`/Sort`}> 
+        <button className={style.btn}>
+          Se affaldsguide
+        </button>
+        </Link>
+
+
+          <Link to={`/Bestil`}>  
+          <button className={style.Thewhite}>
+            Bestil storskrald
+          </button>
+          </Link>
       </div>
       
       <div>

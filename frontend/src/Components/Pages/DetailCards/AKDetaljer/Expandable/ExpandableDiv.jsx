@@ -23,3 +23,22 @@ const ExpandableDiv = ({ title, children }) => {
 };
 
 export default ExpandableDiv;
+
+
+    
+// {/* Render the data if available */}
+// {mana && typeof mana === "object" && (
+//   <div className={style.products}>
+// {/* Display data properties here */}
+//     <p className={style.name}>{mana.title}</p>
+// {/* Loop through categories and render each one */}
+//     {mana.categories.map((category) => (
+//       <div key={category.id}>
+//         <img className={style.pap}src={require(`../../../../Assets/Images/Guide/Guide/Icons/${category.icon_filename}`)} 
+//       alt="pap" />
+       
+        
+//       </div>
+//     ))}
+//   </div>
+// )}

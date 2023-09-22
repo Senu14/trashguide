@@ -139,7 +139,7 @@ return (
   <div>
   
 
-  {/* <div className={style.star}>
+  <div className={style.star}>
           {[1, 2, 3, 4, 5].map((starValue) => (
             <span 
               key={starValue}
@@ -149,7 +149,7 @@ return (
               {starValue <= stars ? "★" : "☆"}
             </span>
           ))}
-        </div> */}
+        </div>
 
         <textarea 
           value={comment}
