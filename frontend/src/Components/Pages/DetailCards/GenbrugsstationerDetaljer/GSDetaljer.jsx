@@ -14,7 +14,7 @@ function GSDetaljer() {
 
   //get the id from the url using useParams
   const { id } = useParams();
-  console.log("This is the id : ", id);
+  console.log("this is the id : ", id);
 
   //fetch data from the API when the component mounts
   useEffect(() => {
