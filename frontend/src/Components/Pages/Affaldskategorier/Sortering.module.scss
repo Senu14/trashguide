@@ -2,7 +2,7 @@
 @use "../../Styleed/Them/Font.scss" as y;
 
 article {
-     background-color: #f5f3f3;
+     background-color: s.$HappyTan;
      max-width: 1200px;
      margin: 0 auto;
      display: grid;

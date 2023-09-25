@@ -8,8 +8,7 @@ import Carousel from '../DetailCards/SlideShow/Slide';
 const Forside = () => {
   return (
     <>
-    
-   
+   <article>
     <div className={style.cotainer}>
     <Carousel />
      
@@ -95,6 +94,7 @@ const Forside = () => {
 <img className={style.wave} src={require('../../../Assets/Images/Layout/PNG/bg-wave-1.png')} alt="wave1" />
 </div>
 </div>
+</article>
 </>
     
   )

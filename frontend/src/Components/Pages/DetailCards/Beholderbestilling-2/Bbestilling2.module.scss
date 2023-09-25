@@ -4,15 +4,16 @@
 .collecter {
      display: grid;
      position: relative;
-     top: 5rem;
+     top: 4rem;
      left: 18%;
      margin: -40px 0  0 -50px;
      gap: 10px;
      max-width: 800px;
-     height: 550px;
+     height: 560px;
      background-color: s.$space-gray;
 .greenfild {
           height: 550px;
+          position: absolute;
           width: 250px;
           background-color: s.$green;
 
@@ -25,19 +26,17 @@
 }
 article {
      gap: 1rem;
-    
      margin:  auto;
      max-width: 1200px;
      position: relative;
      justify-content: center;
      align-items: center;
-     background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
+     background-color: s.$HappyTan;
 }
-.product{
+.products{
+     // left: 250px;
      width: 600px;
-     
      grid-gap: 1rem;
-    
      padding-top: 2rem;
      padding-bottom: 1rem;  
      justify-content: center;
@@ -46,10 +45,11 @@ article {
   }
 .type{
      width: 460px;
-     height: 170px;
+     height: 200px;
      text-align: left;
      padding-top: 1rem;
-     margin-left: 1rem;
+     margin-left: 18rem;
+     position: relative;
      
      h4 {
           color: s.$green;
@@ -74,7 +74,7 @@ a{
 .cuteB{
      background-color: #fff;
      padding: 7px  14px;
-     margin-left: 25rem;
+     margin-right: 6rem;
      padding: 7px  16px;
      border-radius: 4px;
      border: 10px solid ;
@@ -85,8 +85,10 @@ a{
 .NewOne{
      width: 450px;
      display: grid;
+     height: 270px;
      margin: 0 auto;
-     margin-left: 1rem;
+     margin-left: 18rem;
+     padding-bottom: 1rem;
      grid-template-columns: 1fr 1fr;
     
 
@@ -100,10 +102,28 @@ a{
   
 
 
-  @media (min-width: 600px) {
-    .collecter{ grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 600px) {
+    .collecter{ grid-template-columns: repeat(2, 1fr); 
+                max-width: 400px;
+                bottom: 3rem;
+}
+.greenfild{display: none;
   }
-  @media (min-width: 900px) {
+  .type{
+     grid-template-columns: repeat(1, 1fr);
+     right: 1px;
+     width: 310px;
+     font-size: 15px;
+  }
+  .NewOne{
+     width: 250px;
+     display: grid;
+     height: 230px;
+     margin-left: 1rem;
+     margin-top: -2rem;
+   }
+}
+  @media (max-width: 900px) {
     .products { grid-template-columns: repeat(4, 1fr); }
   }
   

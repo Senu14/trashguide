@@ -1,20 +1,33 @@
 @use "../../Styleed/Them/Color.scss" as s;
 @use "../../Styleed/Them/Font.scss" as y;
 
-.cotainer {
+article{
+     background-color: s.$HappyTan;
      max-width: 1200px;
      margin: 0 auto;
      display: grid;
      gap: 1rem;
      margin: auto;
-     margin-bottom: -0.3rem;
-     background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
+     justify-content: center;
+    
+
+}
+.cotainer {
+     gap: 1rem;
+     display: grid;
+     margin: 0 auto;
+    
+     max-width: 1000px;
+     padding-bottom: 1rem;
+     justify-content: center;
+    
+    
     
 }
 .find {
      position: absolute;
-     bottom: -4rem;      
-     right: 34rem;
+     top: 30.5rem;       
+     right: 27rem;
      z-index: 1;
      width: 340px;
      height: 120px;
@@ -163,10 +176,10 @@
     
 }
 .wave{
- width: 100%;
- img{
-     margin-top: 1rem;
- }
+     max-width: 1200px;
+    margin-bottom: -1rem;
+
+
 
  }
  
@@ -175,12 +188,13 @@
    
 // @media (min-width: 600px) {
 //      .cotainer{ grid-template-columns: repeat(2, 1fr); }
+//      Carousel{
+//           display: none;
+//      }
+
 //    }
 // @media (min-width: 900px) {
 //      .cotainer{ grid-template-columns: repeat(3, 1fr); }
 //    }
 
    
-//  .find {
-//      bottom: 21rem;
-//      right: 56rem;}

@@ -17,7 +17,7 @@
    
   
    input {
-     width: 145%;
+     width: 110%;
      padding: 10px;
      margin-bottom: 4px;
      border: 1px solid #ccc;
@@ -35,10 +35,25 @@
      padding: 7px  19px;
      margin-left: 25rem;
      border-radius: 4px;
-     margin-top: 5rem;
+     margin-bottom: 6rem;
      border: 10px solid ;
      color: s.$green;
      font-family: y.$fontOpenSans;
   
+}
+.NewOne{
+  top: -2rem;
+  
+}
+
+@media  (max-width: 600px) {
+  .prducts{ grid-template-columns: repeat(1, 1fr);}
+.cuteB{
+   margin-left:  16rem;
+   margin-bottom: -2rem;
+
+}
+
+
 }
    

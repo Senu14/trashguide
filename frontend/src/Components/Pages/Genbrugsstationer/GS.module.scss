@@ -1,6 +1,16 @@
 @use "../../Styleed/Them/Color.scss" as s;
 @use "../../Styleed/Them/Font.scss" as y;
 
+article{
+  gap: 1rem;
+  margin: auto;
+  display: grid;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: center;
+  background-color: s.$HappyTan;
+
+}
 
 .common {
   gap: 1rem;
@@ -8,54 +18,64 @@
   max-width: 1200px;
   margin-bottom: -0.3rem;
   justify-content: center;
-  background-color: #f5f3f3;
+  background-color: s.$HappyTan;
      
 }
 
   .contents{
-    width: 800px;
-    height: 600px;
-    gap: 1rem;
-    display: grid;
+    gap: 3rem;
     margin: 0 auto;
-    padding-top: 2rem;
-    padding-left: 2rem;
+    display: grid;
+    max-width: 1000px;
+    padding-top: 5rem;
     padding-bottom: 1rem;
     align-items: center;
     justify-content: center;
-    ;
-    grid-template-columns: repeat(3, 1fr);
+   
   }
   .data{
-    width:190px;
-    height: 190px;
-    font-size: 15px;
-   
+    padding: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    max-width: 210px;
+    max-height: 300px;
+    border-radius: 7px;
     color: s.$darkgrey;
     font-weight: lighter;
     background-color:white;
-  
+    transition: box-shadow .3s;
     font-family: y.$fontOpenSans;
-   
   }
- 
- 
+  hr{
+    margin-top: 2rem;
+    color: s.$grey;
+  }
+  .gold {
+   
+    color: rgb(201, 211, 6);
+    
+}
+  .station {
+    font-weight: bold;
+  }
+  .mapImg{
+    width: 180px;
+    border-radius: 7px  7px  0px 0px;
+  }
 
 
 .cold{
      width: 100%;
     
-    
-     
    }
    
 
   
   @media (min-width: 600px) {
-    .products{ grid-template-columns: repeat(3, 1fr); }
+    .contents{ grid-template-columns: repeat(3, 1fr); }
   }
   @media (min-width: 900px) {
-    .products { grid-template-columns: repeat(3, 1fr); }
+    .contents { grid-template-columns: repeat(3, 1fr); }
   }
   
   

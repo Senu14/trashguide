@@ -1,4 +1,3 @@
-// reducers.js
 import { SET_SELECTED_VALUE } from './actionTypes';
 
 const initialState = {
@@ -7,7 +6,7 @@ const initialState = {
 
 const formReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_SELECTED_VALUE:
+    case SET_SELECTED_VALUE://that is our default value of state
       return {
         ...state,
         selectedValue: action.payload,

@@ -1,24 +1,24 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-const AuthContext = createContext()
+const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-	const [loginData, setLoginData] = useState('')
+  const [loginData, setLoginData] = useState(""); //change this to null
 
-	useEffect(() => {
-		if(sessionStorage.getItem('token')) {
-			setLoginData(JSON.parse(sessionStorage.getItem('token')))
-		}
-	}, [children]);
+  useEffect(() => {
+    if (sessionStorage.getItem("token")) {
+      setLoginData(JSON.parse(sessionStorage.getItem("token")));
+    }
+  }, [children]);
 
-	return (
-		<AuthContext.Provider value={{loginData, setLoginData}}>
-			{children}
-		</AuthContext.Provider>
-	)
-}
+  return (
+    <AuthContext.Provider value={{ loginData, setLoginData }}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
 
-// Custom auth hook 
-const useAuth = () => useContext(AuthContext)
+// Custom auth hook
+const useAuth = () => useContext(AuthContext);
 
-export { AuthContext, AuthProvider, useAuth}
+export { AuthContext, AuthProvider, useAuth };

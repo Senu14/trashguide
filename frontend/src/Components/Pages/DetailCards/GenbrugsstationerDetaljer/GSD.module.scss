@@ -4,48 +4,99 @@
 .googleMap {
      gap: 1rem;
      margin:  auto;
+     font-size: 13px;
+     height: 800px;
      max-width: 1200px;
-     position: relative;
-     justify-content: center;
      align-items: center;
-     background-image: linear-gradient(rgb(98, 188, 101, 7%), white);
+     justify-content: center;
+     background-color: s.$HappyTan;
+     font-family: y.$fontOpenSans;
+    
 
+     .insideDiv{
+          height: auto;
+          width: 900px;
+          height: 540px;
+          padding: 20px;
+          display: grid;
+          margin: 0 auto;
+          position: relative;
+          
+
+     }
 .Map {
-     display: grid;
-     width: 900px;
+     width: 880px;
      height: 240px;
     
-}
-.starts {
+     }
+     .Bi{
+        color: s.$green; 
+        
+        
+     }
+     .Br{
+          width: 200px;
+          color: s.$green;
+          cursor: pointer;
+          margin-left: 22rem;
+          padding: 10px 10px;
+          border-radius: 9px;
+          background-color: s.$lightgreen;
+         
+
+     }
+.gold {
    
      color: rgb(201, 211, 6);
      
 }
 textarea{
      width: 50%;
-     padding: 3%;
-     border-radius: 5px;
-    margin-left: 12rem;
+     border: none;
+     padding: 40px;
+     margin-bottom: 1rem;
+     border-radius: 7px;
+     margin-left: 15rem;
 
 }
+.name{
+     font-weight: bold;
+}
 .star{
+   
      color: s.$darkgrey;
-     margin-left: 31rem;
+     margin-left: 34rem;
+     margin-bottom: 0.1rem;
+    
+   
+}
+.Me{
+     width: 30%;
+     border: none;
+     margin-left: 21rem;
+     border-radius: 7px;
+}
+     
+.MyReviews{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     width: 100%;
+     margin-top: 3rem;
+    
+     gap: 4rem;
 }
 
 .markIt{
      border: 2px solid;
    
 }
-.lastClick{
-     button {
-          color: #fff;
-          border-radius: 4px;
-     padding: 7px 20px;
-     margin-left: 21rem;
-    margin-top: 1rem;
-     background-color: s.$green;
-  
 }
-}
-}
+
+
+@media (min-width: 600px) {
+     .googleMap{ grid-template-columns: repeat(3, 1fr); }
+   }
+@media (min-width: 900px) {
+     .googleMap { grid-template-columns: repeat(3, 1fr); }
+   }
+   

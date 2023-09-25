@@ -46,9 +46,15 @@ footer {
 }
 
 
-@media (min-width: 600px) {
-  footer{ grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 600px) {
+  footer{ grid-template-columns: repeat(1, 1fr);}
+ 
+.Flogo {
+	margin-left: 3rem;
+	top: 4rem;
+	
 }
-@media (min-width: 900px) {
+}
+@media (max-width: 900px) {
   footer { grid-template-columns: repeat(3, 1fr); }
 }
