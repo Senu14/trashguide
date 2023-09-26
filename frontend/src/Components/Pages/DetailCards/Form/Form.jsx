@@ -35,7 +35,7 @@ function Form(containerId) {
 
     try {
       const result = await axios.post(
-        "http://localhost:4000/orders",
+        "http://localhost:4000/orders", //in order to make an order, send data to this URL.
         dataToSend
         //We send dataToSend to this URL
       );
@@ -52,24 +52,7 @@ function Form(containerId) {
     }
   };
 
-  // useEffect to fetch data from the API when the component mounts
-  useEffect(() => {
-    // Define the URL to fetch data from
-    const url = `http://localhost:4000/containers`;
-
-    // Function to fetch data asynchronously
-    const getData = async () => {
-      try {
-        const result = await axios.get(url);
-        //        dispatch(setSelectedValue(result.data)); // Update the Redux state with fetched data
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
-    // Call the function to fetch data when the component mounts
-    getData();
-  }, [dispatch]);
+  
 
   return (
     <>

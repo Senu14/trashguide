@@ -9,7 +9,8 @@ import { getSelectedId } from "../../../../redux/selectors";
 const Bbestilling2 = () => {
   // we define a State (variable) to store the list of events
   const [events, setEvents] = useState([]);
-  const containerId = useSelector(getSelectedId);
+  const containerId = useSelector(getSelectedId); // we call the contanerid as (getSelectedId)
+  //useSelector is the action to update the containerId value to (getSelectedId)
  
   // Fetch data from the API when the component mounts
   useEffect(() => {
@@ -19,7 +20,7 @@ const Bbestilling2 = () => {
     const getData = async () => {
       try {
         const result = await axios.get(url);
-        console.log(result);
+        // console.log(result);
         // Set the retrieved data in the state
         setEvents(result.data);
       } catch (err) {
@@ -57,7 +58,7 @@ const Bbestilling2 = () => {
             </div>
 
             <div className={style.NewOne}>
-              <Form containerId={containerId} />
+              <Form containerId={containerId} /> {/*Father and child relation*/}
             </div>
           </div>
         </div>
