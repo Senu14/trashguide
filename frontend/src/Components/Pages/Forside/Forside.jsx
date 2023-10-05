@@ -60,7 +60,7 @@ const Forside = () => {
       </div>
       
       <div>
-      <img className={style.splash}src={require('../../../Assets/Images/Guide/Categories/unsplashsN4u56baSB0.png')} alt="Unsplashs" />
+      <img className={style.splash}src={require('../../../Assets/Images/trashcan/pexels-markus-spiske-3806764.jpg')} alt="Spiske" />
       </div>
     </section>
     
@@ -69,7 +69,7 @@ const Forside = () => {
 
     <section className={style.guide}>
       <div>
-        <img className={style.papekase} src={require('../../../Assets/Images/Guide/Categories/Group 238974.png')} alt="Group" />
+        <img className={style.papekase} src={require('../../../Assets/Images/trashcan/pexels-shvets-production-7512823.jpg')} alt="Production" />
       </div>
       
       <div className={style.lap2}>
